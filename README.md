@@ -1,7 +1,7 @@
 # 🧑‍💻 Clarence Kenzo Personal Portfolio
 
 ## 🌐 Live Demo
-🔗 [https://clarence-kenzo-portfolio.vercel.app](https://clarence-kenzo-portfolio.vercel.app)
+🔗 [https://portfolio-two-murex-49.vercel.app/](https://portfolio-two-murex-49.vercel.app/)
 
 ---
 
