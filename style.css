@@ -11,6 +11,11 @@ h1, h2{
     margin: 0px;
     padding: 0px;
     font-size: 25px;
+    transition: 0.5s;
+}
+
+h2:hover{
+    color: rgb(255, 136, 0);
 }
 
 a:visited{
@@ -58,6 +63,20 @@ a:link{
     background-color: rgba(0, 0, 0, 0.2);
     display: inline-block;
     padding: 0px 10px;
+    transition: scale 0.5s;
+}
+
+.container-button:hover{
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(13, 0, 255);
+    background-color: rgb(13, 0, 255);
+    display: inline-block;
+    padding: 0px 10px;
+    scale: 1.025;
+    box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6) ;
 }
 
 #container2{    
@@ -73,6 +92,87 @@ a:link{
     display: inline-block;
     width: 345px;
     margin-left: 5px;
+    position: relative;
+}
+
+#education-circle{
+    position: absolute;
+    top: 65px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#education-circle2{
+    position: absolute;
+    top: 150px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+
+#education-circle3{
+    position: absolute;
+    top: 235px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    transition: 0.5s;
+}
+/**/
+#education-circle:hover{
+    position: absolute;
+    top: 65px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    border-color: rgb(13, 0, 255);
+    box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6);
+}
+
+#education-circle2:hover{
+    position: absolute;
+    top: 150px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    border-color: rgb(13, 0, 255);
+    box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6) ;
+}
+
+#education-circle3:hover{
+    position: absolute;
+    top: 235px;
+    left: 22px;
+    z-index: 1;
+    border-style: solid;
+    border-width: 4px;
+    border-radius: 50px;
+    border-color: rgb(13, 0, 255);
+    box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6) ;
+}
+/**/
+#education-line{
+    position: absolute;
+    top: 65px;
+    left: 25px;
+    z-index: 0;
+    background-color: rgb(61, 61, 61);
+    border-radius: 0px;
+    height: 175px;
+    width: 1px;
 }
 
 .education-container{
@@ -82,13 +182,22 @@ a:link{
 #container4{
     display: inline-block;
     width: 450px;
-    margin-right: 5px;
+    margin-right: 10px;
 }
 
 #tech-container img{
     margin-right: 5px;
     margin-top: 10px;
     align-items: center;
+    transition: all 0.5s ease;
+}
+
+#tech-container img:hover{
+    margin-right: 5px;
+    margin-top: 10px;
+    align-items: center;
+    transform: translateY(-3px);
+    box-shadow: 0 2px 10px rgba(48, 48, 48, 0.9)
 }
 
 #container5{
