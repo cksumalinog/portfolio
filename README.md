@@ -27,7 +27,7 @@ The site includes:
 ## 🛠️ Technologies Used
 - **HTML5** – For structuring content  
 - **CSS3** – For styling and hover effects  
-- **Positioning & Flexbox** – For layout alignment  
+- **Positioning** – For layout alignment  
 - **Vercel** – For hosting and deployment
 
 ---
@@ -39,26 +39,3 @@ The site includes:
 ✅ Student-built using only basic HTML and CSS concepts
 
 ---
-
-## 🚀 Deployment
-This project is hosted using **Vercel**.  
-To deploy your own version:
-1. Push your code to a GitHub repository.  
-2. Connect your repo to [Vercel](https://vercel.com/).  
-3. Vercel will automatically build and deploy your site.
-
----
-
-## 📸 Preview
-*(You can add a screenshot after deployment)*
-
-![Portfolio Preview](image/screenshot.png)
-
----
-
-## 👤 Author
-**Clarence Kenzo Sumalinog**  
-📍 Baguio City, Philippines  
-📧 clarencekenzosumalinog@gmail.com  
-🔗 [LinkedIn](https://www.linkedin.com/in/clarence-kenzo-sumalinog-894130320/)  
-🔗 [GitHub](https://github.com/cksumalinog)
