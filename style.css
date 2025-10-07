@@ -1,7 +1,7 @@
 body{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Helvetica, Arial, sans-serif;
     margin: 0px;
-    padding: 90px 200px;
+    padding: 90px 350px;
     color: white;
     background-color: #000000;
     font-size: 12px;
@@ -11,10 +11,6 @@ h1, h2{
     margin: 0px;
     padding: 0px;
     font-size: 25px;
-}
-
-p{
-    text-align: justify;
 }
 
 a:visited{
@@ -28,34 +24,81 @@ a:link{
 
 }
 
-.container{
-    margin-top: 10px;
-    padding: 20px;
-    border-style: solid;
-    border-width: 1px;
-    border-color: rgb(103, 103, 103);
-    border-radius: 15px;
-}
-
-.container-button{
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 15px;
-    border-color: blue;
-    display: inline-block;
-    padding: 0px 15px;
-}
-
 #cks{
     border-radius: 5px;
     border: 2px black;
     margin-right: 20px;
     float: left;
     height: 150px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+}
+
+.container{
+    margin-top: 10px;
+    padding: 20px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: rgb(50, 50, 50);
+    border-radius: 15px;
+    background-color: rgba(24, 24, 24, 0.5) ;
 }
 
 .container1-icon{
     height: 15px;
     float: left;
     margin-right: 5px;
+}
+
+.container-button{
+    margin-right: 5px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: rgb(255, 255, 255);
+    background-color: rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#container2{    
+    display: inline-block;
+    width: 380px;
+}
+
+#about-container{
+    margin: 13px;
+}
+
+#container3{
+    display: inline-block;
+    width: 345px;
+    margin-left: 5px;
+}
+
+.education-container{
+    margin: 0px 20px 15px;
+}
+
+#container4{
+    display: inline-block;
+    width: 450px;
+    margin-right: 5px;
+}
+
+#tech-container img{
+    margin-right: 5px;
+    margin-top: 10px;
+    align-items: center;
+}
+
+#container5{
+    display: inline-block;
+    width: 270px;
+}
+
+
+#socials-container img{
+    margin-top: 10px;
+    margin-right: 5px;
+     height: 45px;
 }
