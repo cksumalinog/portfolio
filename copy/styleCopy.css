@@ -1,0 +1,106 @@
+html {
+  font-size: 12px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+}
+
+a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+a:link {
+  text-decoration: none;
+  color: white;
+}
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+}
+
+.container {
+  border-color: rgba(255, 255, 255, 0.798);
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 10px;
+}
+
+#container-wrapper {
+  border-style: solid;
+  border-color: aliceblue;
+  padding: 15vh 25vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+
+#profile-container {
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+  padding: 12px;
+}
+
+#profile-information-container {
+  border-style: solid;
+  row-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+/*Profile Button*/
+.profile-container-button {
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  display: inline-block;
+  margin-right: 7px;
+  padding: 6px;
+}
+
+/**images**/
+.profile-container-icon {
+  height: 15px;
+  float: left;
+  margin-right: 5px;
+}
+
+#cks-self-portrait {
+  border-radius: 5px;
+  border: 2px black;
+  margin-right: 20px;
+  float: left;
+  height: 140px;
+  width: 140px;
+}
+
+#tech-stack-sub-container img {
+  margin-right: 5px;
+  margin-top: 10px;
+  align-items: center;
+  transition: all 0.5s ease;
+}
+
+#tech-stack-sub-container img:hover {
+  margin-right: 5px;
+  margin-top: 10px;
+  align-items: center;
+  transform: translateY(-3px);
+  box-shadow: 0 2px 10px rgba(27, 27, 27, 0.9);
+}
+
+#socials-sub-container img {
+  margin-top: 10px;
+  margin-right: 5px;
+  height: 45px;
+}
