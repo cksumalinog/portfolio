@@ -165,6 +165,15 @@ body {
   border-radius: 50px;
   border-color: blue;
 }
+
+#tech-stack-container {
+  flex-grow: 1;
+}
+
+#socials-container {
+  flex-grow: 1;
+}
+
 /*Milestone for Education Milestone*/
 
 /*Profile Button*/
@@ -211,5 +220,5 @@ body {
 #socials-sub-container img {
   margin-top: 10px;
   margin-right: 5px;
-  height: 45px;
+  height: 35px;
 }

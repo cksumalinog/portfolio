@@ -1,24 +1,15 @@
-/**Genaral**/
-body {
-  font-family: Helvetica, Arial, sans-serif;
-  margin: 0px;
-  padding: 90px 350px;
-  color: white;
-  background-color: #000000;
+html {
   font-size: 12px;
 }
 
 h1,
 h2 {
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
   font-size: 25px;
-  transition: 0.5s;
-  display: inline;
 }
 
-h2:hover {
-  color: rgb(255, 136, 0);
+p {
+  margin: 0;
 }
 
 a:visited {
@@ -30,98 +21,77 @@ a:link {
   text-decoration: none;
   color: white;
 }
-/**Genaral**/
 
-/**Containers**/
+body {
+  background-color: black;
+  color: white;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+}
+
 .container {
-  margin-top: 10px;
-  padding: 20px;
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(50, 50, 50);
-  border-radius: 15px;
+  border-color: rgba(50, 50, 50);
   background-color: rgba(24, 24, 24, 0.5);
+  border-style: solid;
+  border-width: 0.1px;
+  border-radius: 10px;
+  margin: 2px 3px;
+  padding: 12px;
 }
 
 #container-wrapper {
+  border-style: solid;
+  border-color: aliceblue;
+  padding: 15vh 25vw;
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  flex-shrink: 1;
 }
 
 #profile-container {
-  width: 40vw;
-  display: inline-block;
+  width: 50vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-start;
+}
+
+#profile-information-container {
+  row-gap: 12px;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 #about-container {
-  display: inline-block;
-  width: 380px;
+  width: 20vw;
+  flex-grow: 1;
+  line-height: 18px;
 }
 
-#about-sub-container {
-  margin: 13px;
+#about-container h2 {
+  margin-bottom: 15px;
 }
 
 #education-container {
-  display: inline-block;
-  width: 345px;
-  margin-left: 5px;
   position: relative;
+  width: 15vw;
+  flex-grow: 1;
 }
 
-.education-container {
-  margin: 0px 20px 15px;
+#education-sub-container {
+  flex-wrap: wrap;
 }
 
-#tech-stack-container {
-  display: inline-block;
-  width: 450px;
-  height: 100px;
-  margin-right: 10px;
+.education-text-container {
+  margin-left: 20px;
 }
 
-#socials-container {
-  display: inline-block;
-  width: 270px;
-}
-
-/* Profile Container Button*/
-.container-button {
-  margin-right: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: rgb(255, 255, 255);
-  background-color: rgba(0, 0, 0, 0.2);
-  display: inline-block;
-  padding: 0px 10px;
-  transition: scale 0.5s;
-}
-
-.container-button:hover {
-  margin-right: 5px;
-  border-style: solid;
-  border-width: 1px;
-  border-radius: 10px;
-  border-color: rgb(13, 0, 255);
-  background-color: rgb(13, 0, 255);
-  display: inline-block;
-  padding: 0px 10px;
-  scale: 1.025;
-  box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6);
-}
-/* Profile Container Button*/
-
-/*Education Container Milestone roadmap*/
+/*Milestone for Education Milestone*/
 #education-circle {
   position: absolute;
-  top: 65px;
-  left: 22px;
+  top: 60px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
@@ -131,8 +101,8 @@ a:link {
 
 #education-circle2 {
   position: absolute;
-  top: 150px;
-  left: 22px;
+  top: 130px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
@@ -142,8 +112,8 @@ a:link {
 
 #education-circle3 {
   position: absolute;
-  top: 235px;
-  left: 22px;
+  top: 205px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
@@ -151,59 +121,74 @@ a:link {
   transition: 0.5s;
 }
 
-#education-circle:hover {
+#education-line {
   position: absolute;
   top: 65px;
-  left: 22px;
+  left: 19px;
+  z-index: 0;
+  background-color: rgb(61, 61, 61);
+  border-radius: 0px;
+  height: 140px;
+  width: 1px;
+}
+
+/*Milestone Animation*/
+#education-circle:hover {
+  position: absolute;
+  top: 60px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
   border-radius: 50px;
-  border-color: rgb(13, 0, 255);
-  box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6);
+  border-color: blue;
 }
 
 #education-circle2:hover {
   position: absolute;
-  top: 150px;
-  left: 22px;
+  top: 130px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
   border-radius: 50px;
-  border-color: rgb(13, 0, 255);
-  box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6);
+  border-color: blue;
 }
 
 #education-circle3:hover {
   position: absolute;
-  top: 235px;
-  left: 22px;
+  top: 205px;
+  left: 15px;
   z-index: 1;
   border-style: solid;
   border-width: 4px;
   border-radius: 50px;
-  border-color: rgb(13, 0, 255);
-  box-shadow: 0 3px 8px rgba(13, 0, 255, 0.6), 0 -3px 8px rgba(13, 0, 255, 0.6);
+  border-color: blue;
 }
 
-#education-line {
-  position: absolute;
-  top: 65px;
-  left: 25px;
-  z-index: 0;
-  background-color: rgb(61, 61, 61);
-  border-radius: 0px;
-  height: 175px;
-  width: 1px;
+#tech-stack-container {
+  flex-grow: 1;
+  width: 25vw;
 }
-/*Education Container Milestone roadmap*/
 
-/**Containers**/
+#socials-container {
+  flex-grow: 1;
+}
+
+/*Milestone for Education Milestone*/
+
+/*Profile Button*/
+.profile-container-button {
+  border-style: solid;
+  border-radius: 15px;
+  border-width: 2px;
+  display: inline-block;
+  margin-right: 7px;
+  padding: 6px;
+}
 
 /**images**/
-
-.container1-icon {
+.profile-container-icon {
   height: 15px;
   float: left;
   margin-right: 5px;
@@ -214,8 +199,8 @@ a:link {
   border: 2px black;
   margin-right: 20px;
   float: left;
-  height: 150px;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.2);
+  height: 140px;
+  width: 140px;
 }
 
 #tech-stack-sub-container img {
@@ -236,5 +221,5 @@ a:link {
 #socials-sub-container img {
   margin-top: 10px;
   margin-right: 5px;
-  height: 45px;
+  height: 35px;
 }
