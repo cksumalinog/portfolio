@@ -234,3 +234,17 @@ body {
   margin-right: 5px;
   height: 35px;
 }
+
+@media (max-width: 768px) {
+  #container-wrapper {
+    padding: 15vh 10vw;
+  }
+
+  #profile-container,
+  #about-container,
+  #education-container,
+  #tech-stack-container,
+  #socials-container {
+    width: 100%;
+  }
+}
